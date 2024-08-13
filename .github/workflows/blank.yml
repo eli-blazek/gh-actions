@@ -28,5 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+         git config --global user.name "Revert"
+         git config --global user.email revert@example.com
          git revert --no-edit HEAD
          git push
